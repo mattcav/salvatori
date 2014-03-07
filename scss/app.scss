@@ -1,3 +1,8 @@
+// vars
+@import "colors";
+@import "fonts";
+@import "mixin";
+
 @import "settings";
 @import "foundation";
 
@@ -38,3 +43,10 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+@import "base";
+@import "layout";
+@import "modules";
+@import "status";
+@import "theme";
+

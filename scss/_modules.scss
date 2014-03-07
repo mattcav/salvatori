@@ -1,0 +1,96 @@
+
+.hero__inner {
+    @include grid-column(
+        $columns:12,
+        $center:true
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+            $columns:5,
+            $center:true
+        );
+    }
+}
+
+
+
+.homeblock {
+    @include grid-column(
+        $columns:12,
+        $center:true
+        );
+    background: $white;
+    overflow: hidden;
+}
+
+.hometitle {
+    text-align: center;
+}
+
+
+.homeproduct {
+    @include grid-column(
+        $columns:12
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:3
+        );
+    }
+}
+
+.homeproduct__title {
+    text-align: center;
+}
+
+
+.updates__block {
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:6,
+        $collapse:false
+        );
+    }
+}
+
+.footer {
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+        );
+    background:#999;
+}
+.contacts {
+     @include grid-column(
+        $columns:12
+        );
+    text-align: center; 
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:6,
+        $collapse:false
+        );
+    text-align: left;    
+    }
+}
+
+.homeinstagram__list {
+    @include block-grid(
+        $per-row:2,
+        $spacing: 1px
+        );
+    @media #{$medium-up} {
+        @include block-grid(
+        $per-row:6,
+        $spacing: 1px
+        );
+    }
+}
