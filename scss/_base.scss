@@ -1,3 +1,13 @@
 body {
-    background:$background;
+    background-color:$background;
+    background-image:url('../images/texture.svg');
+    background-size:15%;
+
+    @media #{$medium-up} {
+        background-size:10%;
+    }
+
+     @media #{$large-up} {
+        background-size:5%;
+    }
 }

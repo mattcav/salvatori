@@ -1,3 +1,78 @@
 .container {
     padding:0 1rem;
+    margin:0 auto 2rem;
+}
+
+
+.homeblock {
+    @include grid-column(
+        $columns:12,
+        $center:true
+        );
+    padding-top:2em;
+    padding-bottom:2em;
+
+    background: $white;
+    overflow: hidden;
+}
+
+.hometitle {
+    text-align: center;
+}
+
+
+.homeproduct {
+    @include grid-column(
+        $columns:12
+        );
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:3
+        );
+    }
+}
+
+
+
+.updates__block {
+    text-align: center;
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:6,
+        $collapse:false
+        );
+    }
+
+     @media #{$large-up} {
+        @include grid-column(
+        $columns:5,
+        $collapse:false
+        );
+    }
+}
+
+
+.update--news {
+   @media #{$large-up} {
+     @include grid-column(
+        $offset:1
+        );
+   }
+}
+
+.update--offers {
+    @media #{$medium-up} {
+     @include grid-column(
+        
+        );
+   }
+}
+
+.update__inner {
+    max-width: 24rem;
 }

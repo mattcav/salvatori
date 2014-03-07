@@ -7,58 +7,44 @@
 
     @media #{$medium-up} {
         @include grid-column(
-            $columns:5,
+            $columns:6,
+            $center:true
+        );
+    }
+
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:4,
             $center:true
         );
     }
 }
 
-
-
-.homeblock {
-    @include grid-column(
-        $columns:12,
-        $center:true
-        );
+.hero__title {
     background: $white;
-    overflow: hidden;
-}
+    margin: 0.5em 0 1em;
+    padding: 2em;
 
-.hometitle {
-    text-align: center;
+    @media #{$medium-up} {
+        padding:2rem;
+    }
 }
-
 
 .homeproduct {
-    @include grid-column(
-        $columns:12
-        );
-
-    @media #{$medium-up} {
-        @include grid-column(
-        $columns:3
-        );
-    }
-}
+    text-align: center;
+} 
 
 .homeproduct__title {
-    text-align: center;
+    font-size:rem-calc(27);
+    margin:0;
+}
+
+.homeproduct__img {
+    width:60%;
 }
 
 
-.updates__block {
-    @include grid-column(
-        $columns:12,
-        $collapse:true
-        );
 
-    @media #{$medium-up} {
-        @include grid-column(
-        $columns:6,
-        $collapse:false
-        );
-    }
-}
 
 .footer {
     @include grid-column(
