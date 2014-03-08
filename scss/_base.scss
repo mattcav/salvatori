@@ -1,5 +1,5 @@
 body {
-    background-color:$background;
+    background-color:lighten($background, 20);
     background-image:url('../images/texture.svg');
     background-size:15%;
 

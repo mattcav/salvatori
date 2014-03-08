@@ -21,13 +21,24 @@
 }
 
 .hero__title {
-    background: $white;
+    background: $beige;
     margin: 0.5em 0 1em;
-    padding: 2em;
+    padding: 1.5em;
 
     @media #{$medium-up} {
-        padding:2rem;
+        padding:3rem;
+        margin: 1em 0 1.5em;
     }
+     @media #{$medium-up} {
+        padding:4rem;
+        margin: 2.5em 0 3em;
+    }
+}
+
+.hero__logo {
+    max-width: 17rem;
+    margin:0 auto;
+    display: block;
 }
 
 .homeproduct {
