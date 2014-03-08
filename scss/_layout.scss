@@ -35,7 +35,10 @@
 
 
 .updates__block {
-    text-align: center;
+    
+    text-align: justify;
+    hyphens: auto;
+
     @include grid-column(
         $columns:12,
         $collapse:true
@@ -68,21 +71,71 @@
 .update--offers {
     @media #{$medium-up} {
      @include grid-column(
-        
+        $float:right
         );
    }
 }
 
+.update--title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    hyphens: none;
+    // &:before, &:after {
+    //     font-weight: 400;
+    //     font-style: normal;
+    //     content:" • ";
+    //     padding: 0 rem-calc(10);
+    // }
+    &:before {
+        font-feature-settings: "ss02";
+        display: block;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        color:$turquese;
+    }
+}
+
+.homenew__title {
+    &:before {
+        content:"Y";
+    }
+}
+
+.homeoffer__title {
+    &:before {
+        content:"O";
+        color:$lightBrown;
+    }
+}
+
+
 .update__inner {
     max-width: 24rem;
+    overflow: hidden;
+    &:after {
+        font-family: "abril-text", serif;
+        font-feature-settings: "ss01";
+        clear:both;
+        display: block;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        content:"R";
+        font-size:2rem;
+        text-align: center;
+    }
+
+    @media #{$small-only} {
+        float:none;
+        margin:0 auto 2rem;
+    }
 }
 
-.navigation__list {
-    list-style:none;
-    text-align: center;
+.update__link {
+    float:left;
 }
 
-.navigation__item {
-    display: inline-block;
-}
 

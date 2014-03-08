@@ -41,7 +41,7 @@ $row-width: rem-calc(1300);
 
 // We use these to control various global styles
 // $body-bg: #fff;
-// $body-font-color: #222;
+$body-font-color: $darkGrey;
 $body-font-family: "abril-display", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -60,7 +60,7 @@ $microformat-fullname-font-size: rem-calc(27);
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: $turquese;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -77,11 +77,11 @@ $microformat-fullname-font-size: rem-calc(27);
 // $shiny-edge-active-color: rgba(#000, .2);
 
 // Media Query Ranges
-// $small-range: (0em, 40em);
-// $medium-range: (40.063em, 64em);
-// $large-range: (64.063em, 90em);
-// $xlarge-range: (90.063em, 120em);
-// $xxlarge-range: (120.063em);
+$small-range: (0em, 40em);
+$medium-range: (40.063em, 62em);
+$large-range: (62.063em, 90em);
+$xlarge-range: (90.063em, 110em);
+$xxlarge-range: (110.063em);
 
 // $screen: "only screen";
 
@@ -125,8 +125,8 @@ $microformat-fullname-font-size: rem-calc(27);
 // $header-font-family: $body-font-family;
 // $header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
-// $header-line-height: 1.4;
+$header-font-color: $darkGrey;
+$header-line-height: 1.2;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;

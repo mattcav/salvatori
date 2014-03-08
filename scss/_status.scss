@@ -1,0 +1,16 @@
+@keyframes bg-color {
+  0% {background-color:$darkGrey;}
+  33% {background-color:$darkBrown;}
+  66% {background-color:darken($turquese, 25);}
+}
+
+body {
+    animation-name:bg-color;
+    animation-duration:20s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    animation-fill-mode:forwards;
+}
