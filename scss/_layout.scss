@@ -32,6 +32,14 @@
     }
 }
 
+.homeproduct__title {
+    font-size: rem-calc(23)
+}
+
+.homeproduct__img {
+    margin-bottom: 1.25rem
+}
+
 
 
 .updates__block {
@@ -88,25 +96,26 @@
     //     padding: 0 rem-calc(10);
     // }
     &:before {
-        font-feature-settings: "ss02";
+        font-family: 'salvatori';
         display: block;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-style: normal;
         font-weight: 100;
         line-height: 1;
+        margin-bottom: 0.7rem;
         color:$turquese;
     }
 }
 
 .homenew__title {
     &:before {
-        content:"Y";
+        content: "\a4";
     }
 }
 
 .homeoffer__title {
     &:before {
-        content:"O";
+        content:"\2022";
         color:$lightBrown;
     }
 }
@@ -116,15 +125,14 @@
     max-width: 24rem;
     overflow: hidden;
     &:after {
-        font-family: "abril-text", serif;
-        font-feature-settings: "ss01";
+        font-family: 'salvatori';
         clear:both;
         display: block;
         font-style: normal;
         font-weight: 100;
         line-height: 1;
-        content:"R";
-        font-size:2rem;
+        content: "\2014";
+        font-size:3rem;
         text-align: center;
     }
 
@@ -136,6 +144,141 @@
 
 .update__link {
     float:left;
+}
+
+// Chi siamo
+
+.aboutblock {
+    @include grid-column(
+        $columns:12,
+        $center:true
+        );
+    padding-top:2em;
+    padding-bottom:2em;
+
+    background:$beige;
+    overflow: hidden;
+}
+
+.about__block {
+    
+    text-align: justify;
+    hyphens: auto;
+
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:8,
+        $center:true,
+        $collapse:true
+        );
+    }
+
+     @media #{$large-up} {
+        @include grid-column(
+        $columns:6,
+        $center:true,
+        $collapse:true
+        );
+    }
+}
+
+.about--title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    hyphens: none;
+    margin-bottom: 1.5rem;
+    &:before {
+        display: block;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        @media #{$small-only} {
+            font-size: 2rem;
+        }
+    }
+}
+
+.about {
+    &:after {
+        font-family: 'salvatori';
+        clear:both;
+        display: block;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        content: "\2014";
+        font-size:3rem;
+        text-align: center;
+    }
+}
+
+.about__text {
+        @media #{$small-only} {
+        float:none;
+        margin:0 auto 2rem;
+        font-size:90%;
+    }
+
+        @media #{$medium-up} {
+        @include grid-column(
+        $columns:10,
+        $center:true,
+        $collapse:true
+        );
+    }
+}
+
+.about--img {
+    width:100%;
+    margin-bottom: 1.25rem
+}
+
+// Contatti
+
+.contactblock {
+    @include grid-column(
+        $columns:12,
+        $center:true
+        );
+    padding-top:2em;
+    padding-bottom:2em;
+
+    background:$beige;
+    overflow: hidden;
+}
+
+.contact__block {
+
+    text-align: justify;
+    hyphens: auto;
+
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:8,
+        $center:true,
+        $collapse:true
+        );
+    }
+
+     @media #{$large-up} {
+        @include grid-column(
+        $columns:6,
+        $center:true,
+        $collapse:true
+        );
+    }
 }
 
 
