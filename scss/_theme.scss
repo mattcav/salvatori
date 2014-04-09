@@ -1,6 +1,21 @@
-.article-title {
+.article--title {
     text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    hyphens: none;
+    margin-bottom: 1.5rem;
+    &:before {
+        display: block;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        @media #{$small-only} {
+            font-size: 2rem;
+        }
+    }
 }
+
 
 .update--title {
     font-size:rem-calc(27);

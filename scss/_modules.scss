@@ -130,7 +130,36 @@
     }
 }
 
+.single__title {
+        &:before {
+        display: block;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        @media #{$small-only} {
+            font-size: 2rem;
+        }
+    }
+}
+
 .about__text {
+        @media #{$small-only} {
+        float:none;
+        margin:0 auto 2rem;
+        font-size:90%;
+    }
+
+        @media #{$medium-up} {
+        @include grid-column(
+        $columns:10,
+        $center:true,
+        $collapse:true
+        );
+    }
+}
+
+.single__text {
         @media #{$small-only} {
         float:none;
         margin:0 auto 2rem;
@@ -151,6 +180,10 @@
     margin-bottom: 1.25rem
 }
 
+.single--img {
+    width:100%;
+    margin-bottom: 1.25rem
+}
 
 
 
