@@ -79,15 +79,76 @@
 
 .homeproduct {
     text-align: center;
+    margin-top:1rem;
 } 
 
 .homeproduct__title {
-    font-size:rem-calc(27);
+    font-size: rem-calc(18);
     margin:0;
+    border-bottom: 1px solid $lightGrey;
+    padding-bottom: 0.5rem;
+    @media #{$medium-up} {
+    // font-size:rem-calc(27);
+    font-size:rem-calc(23);
+    }
 }
 
 .homeproduct__img {
     width:60%;
+    margin-bottom: 0.75rem;
+    @media #{$medium-up} {
+        margin-bottom: 1.25rem
+    }
+}
+
+// Chi Siamo
+
+.about {
+    &:after {
+        font-family: 'salvatori';
+        clear:both;
+        display: block;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        content: "\2014";
+        font-size:3rem;
+        text-align: center;
+    }
+}
+
+.about__title {
+        &:before {
+        display: block;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        @media #{$small-only} {
+            font-size: 2rem;
+        }
+    }
+}
+
+.about__text {
+        @media #{$small-only} {
+        float:none;
+        margin:0 auto 2rem;
+        font-size:90%;
+    }
+
+        @media #{$medium-up} {
+        @include grid-column(
+        $columns:10,
+        $center:true,
+        $collapse:true
+        );
+    }
+}
+
+.about--img {
+    width:100%;
+    margin-bottom: 1.25rem
 }
 
 
@@ -131,4 +192,11 @@
 
 .homeoffer__link {
     color:$lightBrown;
+}
+
+.updates__time {
+    font-size: 12px;
+    line-height: 2;
+    text-indent: 16px;
+    color: lighten($darkGrey, 20%);
 }

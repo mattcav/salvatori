@@ -23,7 +23,7 @@
 
 .homeproduct {
     @include grid-column(
-        $columns:12
+        $columns:6
         );
     @media #{$medium-up} {
         @include grid-column(
@@ -31,16 +31,6 @@
         );
     }
 }
-
-.homeproduct__title {
-    font-size: rem-calc(23)
-}
-
-.homeproduct__img {
-    margin-bottom: 1.25rem
-}
-
-
 
 .updates__block {
     
@@ -67,8 +57,15 @@
     }
 }
 
+.archive {
+    margin-bottom: 1.5rem;
+}
 
-.update--news {
+.archive:nth-child(even) {
+    clear:both
+}
+
+.update--right {
    @media #{$large-up} {
      @include grid-column(
         $offset:1
@@ -76,7 +73,7 @@
    }
 }
 
-.update--offers {
+.update--left {
     @media #{$medium-up} {
      @include grid-column(
         $float:right
@@ -185,59 +182,6 @@
         $collapse:true
         );
     }
-}
-
-.about--title {
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    hyphens: none;
-    margin-bottom: 1.5rem;
-    &:before {
-        display: block;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 100;
-        line-height: 1;
-        @media #{$small-only} {
-            font-size: 2rem;
-        }
-    }
-}
-
-.about {
-    &:after {
-        font-family: 'salvatori';
-        clear:both;
-        display: block;
-        font-style: normal;
-        font-weight: 100;
-        line-height: 1;
-        content: "\2014";
-        font-size:3rem;
-        text-align: center;
-    }
-}
-
-.about__text {
-        @media #{$small-only} {
-        float:none;
-        margin:0 auto 2rem;
-        font-size:90%;
-    }
-
-        @media #{$medium-up} {
-        @include grid-column(
-        $columns:10,
-        $center:true,
-        $collapse:true
-        );
-    }
-}
-
-.about--img {
-    width:100%;
-    margin-bottom: 1.25rem
 }
 
 // Contatti
