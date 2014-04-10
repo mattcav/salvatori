@@ -38,3 +38,27 @@
         }
     }
 }
+
+.caterogy--title {
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    hyphens: none;
+    margin-bottom: 1.5rem;
+    // border-bottom: 1px solid $lightGrey;
+}
+
+.gallery--title {
+    text-align: center;
+    font-weight: bold;
+    font-size: rem-calc(27);
+    &:before {
+        display: block;
+        font-style: normal;
+        line-height: 1;
+        @media #{$small-only} {
+            font-size: rem-calc(23);
+        }
+    }
+
+}
