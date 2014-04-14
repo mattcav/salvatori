@@ -1,0 +1,53 @@
+
+.contacts {
+     @include grid-column(
+        $columns:12
+        );
+    text-align: center; 
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:6,
+        $collapse:false
+        );
+    text-align: left;    
+    }
+}
+.contactblock {
+    @include grid-column(
+        $columns:12,
+        $center:true
+        );
+    padding-top:2em;
+    padding-bottom:2em;
+
+    background:$beige;
+    overflow: hidden;
+}
+
+.contact__block {
+
+    text-align: justify;
+    hyphens: auto;
+
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:8,
+        $center:true,
+        $collapse:true
+        );
+    }
+
+     @media #{$large-up} {
+        @include grid-column(
+        $columns:6,
+        $center:true,
+        $collapse:true
+        );
+    }
+}

@@ -1,0 +1,14 @@
+.archive {
+    .homeoffer {
+        @media #{$medium-up} {
+            width:50%;
+        }
+        &:nth-child(even) {
+            float:left;
+            clear:both;
+        }
+        &:nth-child(odd) {
+            float:right;
+        }
+    }
+}

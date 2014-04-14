@@ -36,8 +36,8 @@
 // $include-xl-html-grid-classes: false;
 
 $row-width: rem-calc(1300);
-// $column-gutter: rem-calc(30);
-// $total-columns: 12;
+$column-gutter: rem-calc(30);
+$total-columns: 12;
 
 // We use these to control various global styles
 // $body-bg: #fff;

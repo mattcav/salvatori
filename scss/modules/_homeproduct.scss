@@ -1,0 +1,32 @@
+
+.homeproduct {
+    text-align: center;
+    margin-top:1rem;
+    @include grid-column(
+        $columns:6
+    );
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:3
+        );
+    }
+} 
+
+.homeproduct__title {
+    font-size: rem-calc(18);
+    margin:0;
+    border-bottom: 1px solid $lightGrey;
+    padding-bottom: 0.5rem;
+    @media #{$medium-up} {
+    // font-size:rem-calc(27);
+    font-size:rem-calc(23);
+    }
+}
+
+.homeproduct__img {
+    width:60%;
+    margin-bottom: 0.75rem;
+    @media #{$medium-up} {
+        margin-bottom: 1.25rem
+    }
+}

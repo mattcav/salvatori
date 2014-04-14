@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'nested'
         },
         files: {
           'css/app.css': 'scss/app.scss'
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
     concat: {   
       app: {
         src: [
-            'bower_components/jquery/jquery.js', 
+            'bower_components/jquery/dist/jquery.js', 
             'bower_components/foundation/js/foundation.min.js',
             'js/app.js'
         ],
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 
       concat: {
         files: 'js/*.js',
-        tasks: ['concat', 'uglify']
+        tasks: ['concat']
       },
       
       options: {

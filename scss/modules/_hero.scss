@@ -1,0 +1,43 @@
+.hero__inner {
+    @include grid-column(
+        $columns:12,
+        $center:true
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+            $columns:6,
+            $center:true
+        );
+    }
+
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:4,
+            $center:true
+        );
+    }
+}
+
+.hero__title {
+    background: $beige;
+    margin: 0.5em 0 1em;
+    padding: 1.5em;
+
+    @media #{$medium-up} {
+        padding:3rem;
+        margin: 1em 0 0.5em;
+    }
+    @media #{$large-up} {
+        padding:4rem;
+        margin: 1.5em 0 0.5em;
+    }
+}
+
+.hero__logo {
+    max-width: 17rem;
+    max-height:100%;
+    max-width:100%;
+    margin:0 auto;
+    display: block;
+}

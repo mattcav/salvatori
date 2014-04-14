@@ -1,64 +1,52 @@
-.article--title {
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    hyphens: none;
-    margin-bottom: 1.5rem;
+// refactoring
+.bg {
+    background: $beige;
+}
+.homenew__title {
     &:before {
-        display: block;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 100;
-        line-height: 1;
-        @media #{$small-only} {
-            font-size: 2rem;
-        }
+        content: "\a4";
     }
 }
 
-
-.update--title {
-    font-size:rem-calc(27);
-}
-
-.page--title {
-	text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    hyphens: none;
-    margin-bottom: 1.5rem;
+.homeoffer__title {
     &:before {
-        display: block;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 100;
-        line-height: 1;
-        @media #{$small-only} {
-            font-size: 2rem;
-        }
+        content:"\2022";
+        color:$lightBrown;
     }
 }
-
-.caterogy--title {
-    text-align: center;
-    font-weight: normal;
-    font-style: italic;
-    hyphens: none;
-    margin-bottom: 1.5rem;
-    // border-bottom: 1px solid $lightGrey;
+.accessori--item {
+    border-color: $lightGrey;
 }
 
-.gallery--title {
-    text-align: center;
-    font-weight: bold;
-    font-size: rem-calc(27);
-    &:before {
-        display: block;
-        font-style: normal;
-        line-height: 1;
-        @media #{$small-only} {
-            font-size: rem-calc(23);
-        }
-    }
+.skincare--item {
+    border-color: $lightBrown;
+}
 
+.maquillage--item {
+    border-color: $white;
+}
+
+.fragranze--item {
+    border-color: $turquese;
+}
+
+.gallery__link {
+    float: left;
+
+}
+
+.accessori__link {
+    color: $lightGrey;
+}
+
+.skincare__link {
+    color: $lightBrown;
+}
+
+.maquillage__link {
+    color: $white;
+}
+
+.fragranze__link {
+    color: $turquese;
 }

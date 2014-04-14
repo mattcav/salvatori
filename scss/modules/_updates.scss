@@ -1,0 +1,95 @@
+
+.updates__block { 
+    text-align: justify;
+    hyphens: auto;
+
+    @include grid-column(
+        $columns:12,
+        $collapse:true
+        );
+
+    @media #{$medium-up} {
+        @include grid-column(
+        $columns:6,
+        $collapse:false
+        );
+    }
+
+     @media #{$large-up} {
+        @include grid-column(
+        $columns:5,
+        $collapse:false
+        );
+    }
+}
+
+.update--right {
+   @media #{$large-up} {
+     @include grid-column(
+        $offset:1
+        );
+   }
+}
+
+.update--left {
+    @media #{$medium-up} {
+     @include grid-column(
+        $float:right
+        );
+   }
+}
+.update--title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    hyphens: none;
+    font-size:rem-calc(27);
+
+    &:before {
+        font-family: 'salvatori';
+        display: block;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        margin-bottom: 0.7rem;
+        color:$turquese;
+    }
+}
+
+.update__inner {
+    max-width: 24rem;
+    overflow: hidden;
+    margin:0 auto;
+    &:after {
+        font-family: 'salvatori';
+        clear:both;
+        display: block;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        content: "\2014";
+        font-size:3rem;
+        text-align: center;
+    }
+
+    @media #{$small-only} {
+        float:none;
+        margin:0 auto 2rem;
+    }
+}
+
+.update__link {
+    float:left;
+}
+
+.updates__time {
+    font-size: 12px;
+    line-height: 2;
+    text-indent: 16px;
+    color: lighten($darkGrey, 20%);
+}
+
+
+
+

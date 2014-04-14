@@ -1,0 +1,46 @@
+// prodotti
+
+.category__block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 4rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -20px;
+    text-align: center;
+}
+
+.gallery--item {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 200px;
+    margin: 0 0 20px 20px;
+    padding: 20px;
+    text-align: left;
+    border: 1px dotted;
+    a {
+        align-items: center;
+        display: flex;
+        margin-top: auto;
+    }
+}
+
+.gallery--title {
+    text-align: center;
+    font-weight: bold;
+    font-size: rem-calc(27);
+    &:before {
+        display: block;
+        font-style: normal;
+        line-height: 1;
+        @media #{$small-only} {
+            font-size: rem-calc(23);
+        }
+    }
+}
