@@ -23,7 +23,7 @@ Template name: Prodotti
 
     get_header(); ?>
 
-    <article class="entry">
+    <article class="entry entry--prodotti">
         <header class="entry__header">
             <h1 class="entry__title">Prodotti</h1>
         </header>
