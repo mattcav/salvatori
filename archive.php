@@ -15,6 +15,14 @@
         <?php else : ?>
             <?php get_template_part( 'content', 'none' ); ?>
     <?php endif; // end have_posts() check ?>
+
+    <?php if ( function_exists('salvatori_pagination') ) { salvatori_pagination(); } else if ( is_paged() ) { ?>
+        <nav id="post-nav">
+            <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'salvatori' ) ); ?></div>
+            <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'salvatori' ) ); ?></div>
+        </nav>
+    <?php } ?>
+    
 </article>
 </div>
 

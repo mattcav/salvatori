@@ -3,8 +3,7 @@
     $columns:12,
     $center:true
     );
-    padding-top:2em;
-    padding-bottom:2em;
+    padding:2rem;
 
     background:$beige;
     overflow: hidden;
@@ -19,14 +18,24 @@
         font-size: 3rem;
         text-align: center;
     }
+    @media #{$medium-up} {
+        padding:3rem;
+    }
 }
 
+.entry--container {
+    text-align:center;
+    &:after {
+        content:"";
+    }
+}
 .entry__title {
     text-align: center;
     font-weight: bold;
     font-style: italic;
     hyphens: none;
-    margin-bottom: 1.5rem;
+    max-width: 35rem;
+    margin:0 auto 1.5rem;
     &:before,
     &:after {
         content:"—";
@@ -59,8 +68,22 @@
 }
 .entry__content img {
     margin:0 auto 1rem;
+    max-width: 25rem;
     display:block;
+}
+.entry__map {
     @media #{$medium-up} {
-        max-width: 30rem;
+        margin-top:rem-calc(24);
+        @include grid-column(
+                $columns:6,
+                $float:right
+            );
+    }
+}
+.entry__content--contacts {
+    @media #{$medium-up} {
+        @include grid-column(
+                $columns:6
+            );
     }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salvatori - Home</title>
+    <title><?php wp_title(); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/app.css" />
     <script type="text/javascript" src="//use.typekit.net/rqo1yfa.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -19,8 +19,7 @@
                 </a>
               </h1>
             </div>
-
-            <nav class="navigation show-for-medium-up">
+            <nav class="navigation">
               <div class="row">
                 <?php
                     wp_nav_menu( array(

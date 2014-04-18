@@ -1,5 +1,11 @@
-
+.footer {
+    position:relative;
+    overflow: hidden;
+}
 .contacts {
+    color:$beige;
+    position:relative;
+    z-index: 10;
      @include grid-column(
         $columns:12
         );
@@ -10,7 +16,9 @@
         $columns:6,
         $collapse:false
         );
-    text-align: left;    
+        padding-top:2em;
+        text-align: left; 
+        background-image:linear-gradient(right, rgba(255,255,255,0),rgba(40,40,40,0) 0%, black 100%);   
     }
 }
 .contactblock {
@@ -49,5 +57,11 @@
         $center:true,
         $collapse:true
         );
+    }
+}
+
+.contact__img {
+    @media #{$medium-up} {
+        @include position(absolute, top 0 right 0);
     }
 }

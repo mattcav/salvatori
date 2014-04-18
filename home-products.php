@@ -16,7 +16,7 @@ $args = array(
         'post_type' => 'page',
         'post_status' => 'publish'
     ); 
-    $pages = get_pages($args); page
+    $pages = get_pages($args); 
  ?>
  <section class="homeblock homeproducts">
             <?php foreach( $pages as $page ) {      

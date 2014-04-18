@@ -13,6 +13,9 @@
                   <li class="email"><a href="#">info@profumeriasalvatori.it</a></li>
                 </ul>
               </article>
+
+              <img class="contact__img" src="<?php bloginfo('template_directory'); ?>/images/placeholder.jpg" alt="Profumeria Salvatori">
+
             </div>
         </footer>
 

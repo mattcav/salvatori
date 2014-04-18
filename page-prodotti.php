@@ -34,6 +34,7 @@ Template name: Prodotti
                 $slug = $page->post_name;
             ?>
                 <article id="<?php echo $slug; ?>" class="prodotti">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/<?php echo $slug; ?>.png" alt="<?php echo $slug; ?>" class="prodotti__img">
                     <h1 class="prodotti__title">
                         <?php echo $title; ?>
                     </h1>

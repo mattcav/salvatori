@@ -1,6 +1,15 @@
 .entry--prodotti {
     ul, ol {
-        columns: 2;
+        list-style: square;
+        list-style-position: inside;
+        max-width: 50rem;
+        margin:0 auto;
+        @media #{$medium-up} {
+            columns:3;
+        }
+    }
+    li {
+        margin:0 0 rem-calc(6);
     }
     p {
 
@@ -11,7 +20,10 @@
 }
 
 .prodotti {
-    margin:0 0 2rem;
+    margin:0 0 3rem;
+    @media #{$medium-up} {
+        margin:2rem 0 4rem;
+    }
 }
 
 .prodotti__title {
@@ -20,4 +32,13 @@
     font-style: italic;
     hyphens: none;
     margin-bottom: 1.5rem;
+}
+
+.prodotti__img {
+    display: block;
+    margin:0 auto;
+    max-width: 10rem;
+    @media #{$medium-up} {
+        max-width: 100%;
+    }
 }

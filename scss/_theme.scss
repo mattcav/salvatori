@@ -14,39 +14,7 @@
         color:$lightBrown;
     }
 }
-.accessori--item {
-    border-color: $lightGrey;
-}
 
-.skincare--item {
-    border-color: $lightBrown;
-}
-
-.maquillage--item {
-    border-color: $white;
-}
-
-.fragranze--item {
-    border-color: $turquese;
-}
-
-.gallery__link {
-    float: left;
-
-}
-
-.accessori__link {
-    color: $lightGrey;
-}
-
-.skincare__link {
-    color: $lightBrown;
-}
-
-.maquillage__link {
-    color: $white;
-}
-
-.fragranze__link {
-    color: $turquese;
-}
+.page-numbers {
+  @include pagination;
+} 

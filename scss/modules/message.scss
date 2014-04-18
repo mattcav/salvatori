@@ -1,0 +1,113 @@
+.homeblock {
+    @include grid-column(
+        $columns:12,
+        $center:true
+        );
+    padding-top:2em;
+    padding-bottom:2em;
+
+    background:$beige;
+    overflow: hidden;
+}
+
+
+.message {
+    padding-top:2em;
+    padding-bottom:2em;
+    overflow: hidden;
+
+    @media #{$medium-up} {
+            @include grid-column(
+                $columns:6,
+                $center:false
+            );
+       }
+
+     
+    &:before {
+        text-align: center;
+        font-family: 'salvatori';
+        content: "\a4";
+        display: block;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        margin-bottom: 0.7rem;
+        color:$turquese;
+    }
+
+    &:nth-of-type(2n+1) {
+        clear:both;
+        &:before {
+            content: "\2022";
+            color:$darkBrown;
+            .message__link {
+                color:$darkBrown;
+            }
+        }
+    }
+}
+.message__inner {
+    max-width: 26rem;
+    overflow: hidden;
+    margin:0 auto; 
+    &:after {
+        font-family: 'salvatori';
+        clear:both;
+        display: block;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        content: "\2014";
+        font-size:3rem;
+        text-align: center;
+    }
+
+    @media #{$small-only} {
+        float:none;
+        margin:0 auto 2rem;
+    }
+}
+.message__title {
+    font-size:rem-calc(23);
+    font-weight:bold;
+    font-style:italic;
+    text-align: center;
+    @extend .update--title;
+}
+
+.message p,
+.message__link,
+.message__time,
+.message__caption,
+.message__text {
+    max-width: 24rem;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: left;
+    @media #{$large-up} {
+        text-align: justify;
+        hyphens: auto;
+    }
+}
+
+
+.message__time {
+    color:$lightGrey;
+    font-size:.8em;
+}
+
+.message__readmore {
+    text-align: center;
+}
+.message__text {
+    font-size:rem-calc(14);
+    line-height: 1.4;
+}
+
+
+.external {
+    display:inline-flex;
+    align-items:flex-end;
+}
