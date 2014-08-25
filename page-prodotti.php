@@ -32,9 +32,10 @@ Template name: Prodotti
                 $title = $page->post_title;
                 $content = $page->post_content;
                 $slug = $page->post_name;
+                $img = get_the_post_thumbnail($page->ID, 'full', array('class' => 'prodotti__img'));
             ?>
                 <article id="<?php echo $slug; ?>" class="prodotti">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/<?php echo $slug; ?>.png" alt="<?php echo $slug; ?>" class="prodotti__img">
+                    <?php echo $img; ?>
                     <h1 class="prodotti__title">
                         <?php echo $title; ?>
                     </h1>

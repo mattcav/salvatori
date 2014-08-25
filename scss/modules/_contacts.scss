@@ -65,3 +65,32 @@
         @include position(absolute, top 0 right 0);
     }
 }
+
+.map {
+    iframe {
+        max-width: 100%;
+        margin:0 auto;
+        display: block;
+    }
+}
+
+.social {
+    @include block-grid(
+        $per-row:2
+        );
+    max-width: 8rem;
+    margin: 0 auto 1rem;
+
+    @media #{$medium-up} {
+      max-width: 5rem;
+      margin: 0 1rem 1rem;  
+    }
+}
+
+.social__link img {
+    width:rem-calc(36);
+}
+
+.vcard {
+    margin-bottom:0;
+}

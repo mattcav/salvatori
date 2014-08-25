@@ -2,7 +2,7 @@
     ul, ol {
         list-style: square;
         list-style-position: inside;
-        max-width: 50rem;
+        max-width: 40rem;
         margin:0 auto;
         @media #{$medium-up} {
             columns:3;

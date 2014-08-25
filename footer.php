@@ -12,6 +12,18 @@
                   <li>Sab: 9.30 - 13.30, 16.00 - 20.00</li>
                   <li class="email"><a href="#">info@profumeriasalvatori.it</a></li>
                 </ul>
+                <ul class="social">
+                  <li class="social__item social__item--facebook">
+                    <a href="#" class="social__link">
+                      <img src="<?php bloginfo('template_directory'); ?>/images/facebook.png" alt="Facebook">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link social__item--instagram">
+                      <img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram">
+                    </a>
+                  </li>
+                </ul>
               </article>
 
               <img class="contact__img" src="<?php bloginfo('template_directory'); ?>/images/placeholder.jpg" alt="Profumeria Salvatori">

@@ -27,7 +27,7 @@
     &:before {
         text-align: center;
         font-family: 'salvatori';
-        content: "\a4";
+        content: url('../images/glifo2.png');
         display: block;
         font-size: 2.5rem;
         font-style: normal;
@@ -35,12 +35,13 @@
         line-height: 1;
         margin-bottom: 0.7rem;
         color:$turquese;
+        //transform:scale(0.7);
     }
 
     &:nth-of-type(2n+1) {
         clear:both;
         &:before {
-            content: "\2022";
+            content: url('../images/glifo1.png');
             color:$darkBrown;
             .message__link {
                 color:$darkBrown;
